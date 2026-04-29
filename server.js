@@ -60,7 +60,7 @@ const globalLimiter = rateLimit({
 });
 const formLimiter = rateLimit({
   windowMs: 60 * 60 * 1000,
-  max: 15,
+  max: 50,
   message: { success: false, message: "Too many submissions, please try again later." },
 });
 
